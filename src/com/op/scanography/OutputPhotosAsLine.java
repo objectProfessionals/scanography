@@ -36,7 +36,7 @@ public class OutputPhotosAsLine extends Base {
 	private String baseDir6 = "WedPics/";
 	private String baseDirs[] = { baseDir1, baseDir3, baseDir4, baseDir5, baseDir6 };
 	private String srcDir = baseDir;
-	private String opDir = hostDir+"op/" + file + "/";
+	private String opDir = hostOpDir + file + "/";
 	private int w = 0;
 	private int h = 200;
 	private String opFile = file + "_PHO.png";

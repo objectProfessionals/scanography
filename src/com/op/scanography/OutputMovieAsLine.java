@@ -22,8 +22,8 @@ public class OutputMovieAsLine extends Base {
 	}
 
 	private String file = "GBPP";
-	private String srcDir = hostDir + "src/" + file + "/";
-	private String opDir = hostDir + "op/" + file + "/";
+	private String srcDir = hostSrcDir + file + "/";
+	private String opDir = hostOpDir + file + "/";
 	private int w = 0;
 	private int h = 0;
 	private String opFile = file + "_LINE.png";

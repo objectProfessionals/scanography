@@ -16,7 +16,7 @@ public class InstagramSplitter extends Base {
 
 	private String ip = "SER";
 	private String bg = "CHI";
-	private String srcDir = hostDir + "/" + ip + "/";
+	private String srcDir = hostSrcDir + "/" + ip + "/";
 	private String ipFile = ip + "_" + bg + "_OUT";
 	private String opFile = ip + "_" + bg + "_OP";
 

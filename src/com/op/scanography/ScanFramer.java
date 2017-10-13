@@ -22,7 +22,7 @@ public class ScanFramer extends Base {
 	private String film = "TFA";
 	private String weightFile = "REY";
 	private String angleFile = film + "_" + weightFile + "_OUT.png";
-	private String srcDir = hostDir + "op/" + film + "/";
+	private String srcDir = hostOpDir + film + "/";
 	private String opDirWeb = "D:/My Documents/My Eclipse/MovieMapperEclipse/git/movies/" + film + "/";
 	private int mockType = 0;
 	private String mockFile = "MOCK" + mockType;
@@ -31,7 +31,7 @@ public class ScanFramer extends Base {
 	private int yMock = -1;
 	private int dMock = -1;
 
-	private String frFile = hostDir + "op/kickstarter/ProjectPages/" + mockFile + ".jpg";
+	private String frFile = hostOpDir + "kickstarter/ProjectPages/" + mockFile + ".jpg";
 
 	private BufferedImage frbi;
 	private BufferedImage ibi;

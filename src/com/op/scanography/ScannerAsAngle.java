@@ -22,13 +22,13 @@ public class ScannerAsAngle extends Base {
     private double gStart = 0.55;
     private double gMax = 0.44;
 
-    private String opDir = hostDir + film + "/";
+    private String opDir = hostOpDir + film + "/";
     private double stroke = strokemm * dpi / mm2in; // 180K = 80.55
 
     private String framesFileName = film + "_LINE.png";
     private String opFileName = film + "_" + weightFile + "_OUT." + outFileType;
     private String weightFileName = film + "_" + weightFile + ".jpg";
-    private String fontFile = hostDir + "FONTS/SLIMBOLD.ttf";
+    private String fontFile = hostOpDir + "FONTS/SLIMBOLD.ttf";
     private String copyright = "© www.movie-maps.net";
     private boolean textDrawn = false;
 

@@ -12,10 +12,10 @@ public class JoinLines extends Base {
 	public static JoinLines joinLines = new JoinLines();
 	private String file1 = "FOTR1";
 	private String file2 = "FOTR";
-	private String ipF1 = hostDir + "op/" + file1 + "/" + file1 + "_Line.png";
-	private String ipF2 = hostDir + "op/" + file2 + "/" + file2 + "_Line.png";
+	private String ipF1 = hostOpDir + file1 + "/" + file1 + "_Line.png";
+	private String ipF2 = hostOpDir +  file2 + "/" + file2 + "_Line.png";
 	private String opFile = file2;
-	private String opF = hostDir + "op/" + file1 + "/" + opFile + "_Line_ALL.png";
+	private String opF = hostOpDir + file1 + "/" + opFile + "_Line_ALL.png";
 
 	public static void main(String[] args) throws Exception {
 		joinLines.mergeFiles();

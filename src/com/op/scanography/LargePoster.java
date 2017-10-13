@@ -15,8 +15,8 @@ public class LargePoster extends Base {
 	public static LargePoster large = new LargePoster();
 	private String file = "GBPP";
 	private String weight = "GBPP";
-	private String ipF = hostDir + "op/" + file + "/FIN/" + file + "_" + weight + "_OUT.png";
-	private String opF = hostDir + "op/" + file + "/FIN/" + file + "_" + weight + "_OUT_L.png";
+	private String ipF = hostOpDir + file + "/FIN/" + file + "_" + weight + "_OUT.png";
+	private String opF = hostOpDir + file + "/FIN/" + file + "_" + weight + "_OUT_L.png";
 
 	public static void main(String[] args) throws Exception {
 		large.make();
