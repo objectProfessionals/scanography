@@ -9,7 +9,7 @@ import java.io.PrintWriter;
 public class CombineReports extends Base {
 
 	public static CombineReports combine = new CombineReports();
-	private String dir = hostDir + "/scanography/Kickstarter/reports/zip/";
+	private String dir = hostDir + "/Kickstarter/reports/zip/";
 	private String all = "ALL.csv";
 
 	public static void main(String[] args) throws Exception {
