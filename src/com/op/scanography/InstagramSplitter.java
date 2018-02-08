@@ -14,9 +14,11 @@ public class InstagramSplitter extends Base {
 
 	private static InstagramSplitter splitter = new InstagramSplitter();
 
-	private String ip = "SER";
-	private String bg = "CHI";
-	private String srcDir = hostSrcDir + "/" + ip + "/";
+//	private String ip = "SER";
+	private String ip = "instaSplits";
+//	private String bg = "CHI";
+	private String bg = "FETT";
+	private String srcDir = hostOpDir + ip + "/";
 	private String ipFile = ip + "_" + bg + "_OUT";
 	private String opFile = ip + "_" + bg + "_OP";
 
@@ -48,15 +50,16 @@ public class InstagramSplitter extends Base {
 
 	private void draw() throws IOException {
 		if (type == TYPE_INST) {
-			splitter.splitInstagram();
+			splitInstagram();
 		} else if (type == TYPE_ZOOM) {
-			splitter.splitZoom();
+			splitZoom();
 		} else if (type == TYPE_ZOOM_GIF) {
-			splitter.splitZoomGif();
+			splitZoomGif();
 		} else if (type == TYPE_LIN_GIF) {
-			splitter.splitLinearGif();
+			splitLinearGif();
 		} else if (type == TYPE_ZOOM_TR) {
-			splitter.splitZoomTR();
+			//splitZoomTR();
+			splitZoom(0, 0, 2000, 500, 500, 250, 5);
 		}
 	}
 
@@ -113,6 +116,16 @@ public class InstagramSplitter extends Base {
 			draw(x, 0, 576);
 			save(i);
 			i++;
+		}
+	}
+
+	private void splitZoom(double x1, double y1, double d1, double x2, double y2, double d2, double num) throws IOException {
+		int dd = (int)((d1-d2)/(num-1));
+		int xd = (int)((x2-x1)/num);
+		int yd = (int)((y2-y1)/num);
+		for (double i=1; i<=num; i++) {
+			draw((int)(xd*(i-1)), (int)(yd*(i-1)), (int)d1 - dd*((int)(i-1)));
+			save((int) i);
 		}
 	}
 

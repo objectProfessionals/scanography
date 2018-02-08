@@ -10,9 +10,9 @@ import java.util.Iterator;
 
 public class Base {
 
-    String hostDir = "../host/scanography/";
-    String hostOpDir = hostDir+"op/";
-    String hostSrcDir = hostDir+"src/";
+    public String hostDir = "../host/scanography/";
+    public String hostOpDir = hostDir+"op/";
+    public String hostSrcDir = hostDir+"src/";
 
     public static void savePNGFile(BufferedImage opImage, String filePath, double dpi) {
         try {
